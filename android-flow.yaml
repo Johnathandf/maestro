@@ -1,0 +1,37 @@
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- assertVisible: "E-mail"
+- inputText: teste@teste.com
+
+- tapOn:
+    id: "password"
+- assertVisible:
+    id: "password"
+- inputText: 123456
+
+- tapOn:
+    id: "login-button"
+
+- tapOn: "Selecione seu endereço..."
+- tapOn:
+    id: "android:id/button1"
+- tapOn: "Pastelaria da Maria"
+- tapOn:
+    id: "com.android.systemui:id/wifi_signal"
+- tapOn:
+    point: "94%,54%"
+- tapOn:
+    id: "open-cart-button"
+- tapOn:
+    id: "confirm-order-button"
+- tapOn: "Dinheiro"
+- tapOn:
+    id: "do-order-button"
+- tapOn:
+    id: "order-sucess-txt"
+- scrollUntilVisible:
+    element: "Shushi Home"
+    direction: DOWN
